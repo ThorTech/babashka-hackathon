@@ -41,6 +41,10 @@
 - [Intellij Setup with Cursive](https://cursive-ide.com/userguide/babashka.html)
 - [Visual Studio Code Calva Setup](https://calva.io/babashka/)
 
+### Develop
+
+- [Babashka Pods](https://babashka.org/toolbox/)
+
 ### Learn
 
 - [Babashka Docs](https://github.com/babashka/babashka)
