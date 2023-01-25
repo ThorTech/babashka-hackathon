@@ -24,9 +24,12 @@
                                 :request
                                 {:FunctionName "ConfigurationKeyRequests"
                                  :Payload payload}})]
-    (println ::out (keys out))
-    (with-open [r (io/reader (:Payload out))] 
-      (doall (-> r (json/parse-stream true) :Values)))))
+    (if (:Payload out)
+      (with-open [r (io/reader (:Payload out))] 
+        (doall (-> r (json/parse-stream true) :Values)))
+      (do 
+        (println out)
+        (throw (ex-info "No :Paylod found in output from lambda invoke." {:data out}))))))
 
 (defn exit
   "Helper to wrap System/exit"

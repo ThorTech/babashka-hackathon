@@ -59,5 +59,9 @@
 (def lambda (aws/client {:api :lambda}))
 (aws/invoke lambda {:op :Invoke
                     :request
-                    {:FunctionName "arn:aws:lambda:us-east-1:############:function:test"}})
+                    {:FunctionName "arn:aws:lambda:us-east-1:138226511037:function:ConfigurationKeyRequests"}})
+```
+
+```shell
+AWS_PROFILE=eas_dev AWS_DEFAULT_REGION=us-east-1 bb -m thortech.config -e 20221108 -t LegacyConfig
 ```
