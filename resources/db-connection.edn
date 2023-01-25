@@ -1,0 +1,6 @@
+{:dbtype   "mssql"
+         :host     "sqlserver-lite.dev.electiontonight.com"
+         :dbname   "ENSAdmin"
+         :user     "sa"
+         :password ""
+         :port     1433}

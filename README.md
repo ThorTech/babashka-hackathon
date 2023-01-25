@@ -43,7 +43,8 @@
 
 ### Develop
 
-- [Babashka Pods](https://babashka.org/toolbox/)
+- [Babashka Pods](https://github.com/babashka/pod-registry)
+- [Babashka SQL Pods](https://github.com/babashka/babashka-sql-pods)
 
 ### Learn
 
