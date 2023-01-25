@@ -1,10 +1,7 @@
-(ns thortech.sql-server)
+(ns thortech.sql-server
+  (:require [pod.babashka.mssql :as sql]))
 
 ; See: https://github.com/babashka/babashka-sql-pods
-
-(require '[pod.babashka.mssql :as sql]
-         ;'[clojure.edn :as edn]
-         )
 
 (def active-event-sql
   "SELECT ConfigEnvironment FROM Systems WHERE SelectedDuringLogin = 1;")
@@ -18,5 +15,5 @@
 
 ;(def db (edn/read-string (slurp "/Users/wcallahan/git/babashka-hackathon/resources/db-connection.edn")))
 
-(sql/execute! db [active-event-sql])
-
+(defn -main [& args]
+  (sql/execute! db [active-event-sql]))

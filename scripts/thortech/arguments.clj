@@ -1,7 +1,6 @@
-(ns thortech.arguments)
-
-(require '[clojure.tools.cli :refer [parse-opts]]
-         '[babashka.cli :as cli])
+(ns thortech.arguments
+  (:require [clojure.tools.cli :refer [parse-opts]]
+            [babashka.cli :as cli]))
 
 (def cli-options
   ;; An option with a required argument

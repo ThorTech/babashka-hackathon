@@ -24,4 +24,5 @@
       first
       :name))
 
-(println (babashka-latest-version))
+(defn -main [& args]
+  (println (babashka-latest-version)))
