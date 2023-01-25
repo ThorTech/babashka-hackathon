@@ -1,0 +1,10 @@
+{:deps    {cheshire/cheshire                  {:mvn/version "5.8.1"}
+           clj-http/clj-http                  {:mvn/version "3.4.0"}
+           http-kit/http-kit                  {:mvn/version "2.6.0"}
+           org.babashka/cli                   {:mvn/version "0.4.39"}
+           com.microsoft.sqlserver/mssql-jdbc {:mvn/version "11.2.0.jre11"}
+           }
+ :pods    {org.babashka/mssql {:version "0.1.1"}}
+ :aliases {:main {:main-opts ["-m" "thortech.main"]}}
+ :paths   ["scripts" "test_scripts"]
+ :tasks   {test-args ()}}

@@ -17,7 +17,7 @@
 1. Execute the main file
 
    ```
-   ./src/thortech/main.clj
+   bb -m thortech.main
    ```
 
 ## Project Structure

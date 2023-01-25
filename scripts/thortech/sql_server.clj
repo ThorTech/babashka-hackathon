@@ -1,9 +1,6 @@
-#!/usr/bin/env bb
+(ns thortech.sql-server)
 
 ; See: https://github.com/babashka/babashka-sql-pods
-(require '[babashka.pods :as pods])
-
-(pods/load-pod 'org.babashka/mssql "0.1.1")
 
 (require '[pod.babashka.mssql :as sql]
          ;'[clojure.edn :as edn]

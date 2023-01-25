@@ -1,5 +1,0 @@
-{:deps    {cheshire           {:mvn/version "5.8.1"}
-           clj-http           {:mvn/version "3.4.0"}
-           http-kit           {:mvn/version "2.6.0"}
-           org.babashka/mssql {:mvn/version "0.1.1"}}
- :aliases {:main {:main-opts ["-m" "thortech.main"]}}}
