@@ -51,3 +51,13 @@
 - [Babashka Docs](https://github.com/babashka/babashka)
 - [Babaska Examples](https://github.com/babashka/babashka/blob/master/examples/README.md)
 - [Example Project Structure](https://cljdoc.org/d/borkdude/babashka/0.2.6/doc/readme)
+
+# Team B
+
+```clojure
+(require '[com.grzm.awyeah.client.api :as aws])
+(def lambda (aws/client {:api :lambda}))
+(aws/invoke lambda {:op :Invoke
+                    :request
+                    {:FunctionName "arn:aws:lambda:us-east-1:############:function:test"}})
+```

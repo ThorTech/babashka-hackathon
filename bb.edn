@@ -4,6 +4,7 @@
            org.babashka/cli                   {:mvn/version "0.4.39"}
            com.cognitect.aws/endpoints {:mvn/version "1.1.12.307"}
            com.cognitect.aws/s3 {:mvn/version "822.2.1145.0"}
+           com.cognitect.aws/lambda {:mvn/version "813.2.972.0"}
            com.grzm/awyeah-api {:git/url "https://github.com/grzm/awyeah-api"
                                 :git/sha "1810bf624da2be58c77813106a1d51e32db11690"
                                 :git/tag "v0.8.35"}
