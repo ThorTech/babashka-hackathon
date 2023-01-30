@@ -1,7 +1,8 @@
 (ns thortech.main
   (:require [clojure.java.shell :refer [sh]]
             [cheshire.core :as json]
-            [org.httpkit.client :as http]))
+            [org.httpkit.client :as http]
+            [com.grzm.awyeah.client.api :as aws]))
 
 
 
@@ -26,3 +27,8 @@
 
 (defn -main [& args]
   (println (babashka-latest-version)))
+
+(def s3 (aws/client {:api :s3}))
+
+(def buckets (-> (aws/invoke s3 {:op :ListBuckets})
+                 :Buckets))

@@ -51,3 +51,15 @@
 - [Babashka Docs](https://github.com/babashka/babashka)
 - [Babaska Examples](https://github.com/babashka/babashka/blob/master/examples/README.md)
 - [Example Project Structure](https://cljdoc.org/d/borkdude/babashka/0.2.6/doc/readme)
+
+
+## TODO
+
+- Make an API Gateway and use path authorization to control who has access to tasks
+- For SQL Server Restoration, run the restore and immediately return a response. Use stats to determine the status of the restore
+
+
+## Problems
+
+- What will we do with long lived tasks?
+- What will we do with tasks that need to be awaited?
